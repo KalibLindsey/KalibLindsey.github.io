@@ -1,29 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8" />
-	<title>Kalib Matthew Lindsey</title>
-	<style>
-		* { padding: 0; margin: 0; }
-		canvas { background: #eee; display: block; margin: 0 auto; }
-	</style>
+    <meta charset="UTF-8">
+    <title>Kalib Lindsey</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cairo">
 </head>
-
 <body>
-	<h1>Time to learn some game stuff</h1>
-	<p>Test!!</p>
-	
-	<canvas id="myCanvas" width="480" height="320"></canvas>
-	
-	<script>
-		var canvas = document.getElementById("myCanvas");
-		var ctx = canvas.getContext("2d");
-		
-		ctx.beginPath();
-		ctx.rect(20, 40, 50, 50);
-		ctx.fillStyle = "#FF0000";
-		ctx.fill();
-		ctx.closePath();
-	</script>
+    <div class="main">
+        <div class="container">
+            <h1>Hi, I'm Kalib Lindsey</h1>
+            <h3>(et bonjour, je m'appelle Kalib Lindsey)</h3>
+            <img id="me-photo" src="me.png">
+        </div>
+
+
+    </div>
+
+    <div class="about-me">
+        <div class="container">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac convallis elit, et feugiat nulla. Donec et magna elementum, aliquam felis vitae, semper metus. Nullam porta semper mauris, eget scelerisque est congue eu. Vestibulum vel mollis quam, eget fringilla magna. Phasellus a leo egestas ligula egestas mollis. Aliquam lobortis augue fringilla tortor elementum, quis tincidunt augue semper. Suspendisse laoreet nec lectus id tincidunt. Pellentesque a enim eget enim elementum sagittis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut non varius elit. Etiam fringilla justo non lacus vestibulum interdum. Sed euismod et nulla ut lobortis.
+            <br>
+                Ut sit amet finibus nibh. Nam posuere ipsum a mollis pellentesque. Nulla volutpat lacus turpis, eget vehicula lectus pellentesque et. Integer ante orci, viverra eget enim ut, lacinia aliquam arcu. Praesent laoreet iaculis placerat. Duis tempor odio vitae ex ultricies sodales. Proin at elit molestie, malesuada tellus in, sagittis ante. Quisque libero lectus, feugiat sed quam sit amet, porta tristique magna. Integer dignissim ipsum non tellus interdum, nec accumsan quam varius. Proin vel ornare diam.
+            </p>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $("#me-photo").click(function() {
+                $('html, body').animate({scrollTop: 775}, "fast");
+            });
+
+            
+
+        });
+
+
+
+    </script>
+
 </body>
 </html>
