@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    background-size: cover;
+    background: url("louvre2.jpg") fixed top center;
+    height: 775px;
+    min-width: 500px;
+}
+
+.main h1 {
+    font-family: Cairo, sans-serif;
+    text-align: center;
+    text-shadow: 2px 2px #A27562;
+    line-height: 0.8em;
+    font-size: 3em;
+    color: #272727;
+}
+
+.main h3 {
+    font-family: Cairo, sans-serif;
+    text-shadow: 1px 1px #A27562;
+    font-weight: 500;
+    text-transform: lowercase;
+    text-align: center;
+    font-size: 1em;
+}
+
+.main img {
+    width: 250px;
+    border: 2px #272727 inset;
+    border-radius: 100%;
+    transition: .75s;
+    display: block;
+    margin: 10% auto;
+}
+
+.main img:hover {
+    opacity: .75;
+    transition: .75s;
+}
+
+.main .container {
+    padding: 100px 50px;
+    width: 450px;
+}
+/* A27562, 6862A2, 62A26A */
+
+.about-me .container {
+    border-top: 5px #272727 solid;
+    background-color: #272727;
+    font-family: Cairo, sans-serif;
+    font-size: 2em;
+}
+
+.about-me p {
+    padding: 5%;
+    color: #6862A2;
+}
+
+@media screen and (max-width: 500px) and (min-width: 400px) {
+
+}
